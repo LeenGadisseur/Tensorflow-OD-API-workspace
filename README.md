@@ -23,4 +23,4 @@ python3 model_main_tf2.py --model_dir=models/my_ssd_mobilenet_v2 --pipeline_conf
 
 Links
 -----
-* [TensorFlow Models]: https://github.com/tensorflow/models
+* [TensorFlow Models](https://github.com/tensorflow/models)
