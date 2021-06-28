@@ -1,0 +1,8 @@
+*.record
+annotations/*.record
+annotations/shards/*.record
+annotations/test_records/*.record
+scripts/pre_procesing/Data/EPFL/*.record
+scripts/pre_procesing/Data/EPFL/shards/*.record
+models/my_ssd_mobilenet_v2/ckpt1/*
+
