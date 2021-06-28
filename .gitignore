@@ -1,8 +1,14 @@
 *.record
 annotations/*.record
+<<<<<<< HEAD
 annotations/shards/*.record
 annotations/test_records/*.record
 scripts/pre_procesing/Data/EPFL/*.record
 scripts/pre_procesing/Data/EPFL/shards/*.record
 models/my_ssd_mobilenet_v2/ckpt1/*
+=======
+annotations/test_records/*.record
+scripts/pre_procesing/Data/EPFL/*.record
+
+>>>>>>> 52cacf26e9a2819b0c9d4a47e5d1c0f39b57fe82
 
