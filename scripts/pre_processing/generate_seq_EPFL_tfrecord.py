@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # gebaseerd op script van petinhoss7 https://github.com/tensorflow/models/issues/7967
-=======
-# script van petinhoss7 https://github.com/tensorflow/models/issues/7967
->>>>>>> 52cacf26e9a2819b0c9d4a47e5d1c0f39b57fe82
+
 
 import os
 import io
@@ -25,11 +22,7 @@ class_dict = {'person': 1 }
 flags = tf.app.flags
 flags.DEFINE_string('root_dir', '/media/leen/Acer_500GB_HDD/EPFL', 'Root directory to raw EPFL dataset.')
 flags.DEFINE_string('set', 'test', 'Convert training set, validation set.')
-<<<<<<< HEAD
-flags.DEFINE_string('output_path', 'Data/EPFL/TEST', 'Path to output TFRecord')
-=======
 flags.DEFINE_string('output_path', 'Data/EPFL', 'Path to output TFRecord')
->>>>>>> 52cacf26e9a2819b0c9d4a47e5d1c0f39b57fe82
 flags.DEFINE_integer('start_shard', 0, 'Start index of TFRcord files')
 flags.DEFINE_integer('num_shards', 1, 'The number of TFRcord files')
 flags.DEFINE_integer('num_frames', 10, 'The number of frame to use')
@@ -42,11 +35,7 @@ SETS = ['train', 'val', 'test']
 MAX_INTERVAL = 5
 
 def sample_frames(xml_files):
-	#
-<<<<<<< HEAD
-	print("Lengte XML files: ", len(xml_files))
-=======
->>>>>>> 52cacf26e9a2819b0c9d4a47e5d1c0f39b57fe82
+	#print("Lengte XML files: ", len(xml_files))
 	samples_size = (len(xml_files) - 1) // FLAGS.num_frames + 1
 	print("Lengte sample size: ",samples_size)
 	samples = []
@@ -66,11 +55,8 @@ def gen_shard(examples_list, annotations_dir, out_filename, root_dir, _set):
 	#print("Example list: ",examples_list)
 	print("Processing XML files...")
 	xml_files = []
-<<<<<<< HEAD
 	print("Lengte examples_list: ", len(examples_list))
-=======
-	#print("Lengte examples_list: ", len(examples_list))
->>>>>>> 52cacf26e9a2819b0c9d4a47e5d1c0f39b57fe82
+
 	for indx, example in enumerate(examples_list):
 		#Groepeer files per 10
 		#print("Index: ", indx)
