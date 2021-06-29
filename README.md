@@ -19,8 +19,8 @@ Annotaties dataset
 TF-records staan niet bij in deze repository. Te downloaden van [hier](https://drive.google.com/drive/folders/148Ss13RS61af6KCZPEoF1SHUKJAEiDz9?usp=sharing), en in de annotaties map plaatsen.
 
 
-
-Docker TensorFlow OB Detection API
+<!---
+ Docker TensorFlow OB Detection API
 ----------------------------------
 Dockerfile TensorFlow :
 ```
@@ -36,13 +36,14 @@ Run een interactive versie van de docker container met de files van workspace be
 ```
 docker run -it --rm -v $PWD:/tmp -w /tmp tensorflow/tensorflow:2.2.0-gpu bash
 ```
+--->
 
 TensorBoard evaluatie trainen
-----------------------------------
-Dockerfile TensorFlow :
+TensorBoard gebruiken voor het monitoren van de training :
 ```
 tensorboard --logdir=models/my_ssd_mobilenet_v2
 ```
+Voor evaluatie in de t
 
 Gebruiken van files
 -------------------
@@ -53,9 +54,18 @@ python3 model_main_tf2.py --model_dir=models/my_ssd_mobilenet_v2 --pipeline_conf
 
 ```
 
+Voor het evalueren van de standaard MobileNetV2-SSDLite object detector op de EPFL dataset: 
+
+```
+python3 model_main_tf2.py --model_dir=eval/my_ssd_mobilenet_v2--pipeline_config_path=models/my_ssd_mobilenet_v2/pipeline_shards.config --checkpoint_dir=models/my_ssd_mobilenet_v2/ckpt1
+
+```
+Geeft momenteel error-> TypeError: 'numpy.float64' object cannot be interpreted as an integer
+self.iouThrs = np.linspace(.5, 0.95, np.round((0.95 - .5) / .05) + 1, endpoint=True)
+
+
 Links
 -----
 * [TensorFlow Models](https://github.com/tensorflow/models)
-<<<<<<< HEAD
 * [EPFL TFRecords](https://drive.google.com/drive/folders/148Ss13RS61af6KCZPEoF1SHUKJAEiDz9?usp=sharing)
 
