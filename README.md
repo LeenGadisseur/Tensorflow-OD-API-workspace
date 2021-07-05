@@ -43,7 +43,7 @@ TensorBoard gebruiken voor het monitoren van de training :
 ```
 tensorboard --logdir=models/my_ssd_mobilenet_v2
 ```
-Voor evaluatie in de t
+Voor evaluatie na trainen in eval file.
 
 Gebruiken van files
 -------------------
