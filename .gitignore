@@ -9,8 +9,7 @@ scripts/pre_procesing/Data/EPFL/*.record
 
 
 models/my_ssd_mobilenet_v2/checkpoints/*
-tf1-venv/*
-tf2-venv/*
+
 
 
 
