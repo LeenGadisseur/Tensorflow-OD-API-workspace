@@ -69,5 +69,5 @@ Links
 -----
 * [TensorFlow Models](https://github.com/tensorflow/models)
 * [EPFL TFRecords](https://drive.google.com/drive/folders/148Ss13RS61af6KCZPEoF1SHUKJAEiDz9?usp=sharing)
-* [LSTM models](https://github.com/LeenGadisseur/Tensorflow-OD-API-workspace)
+* [LSTM models](https://github.com/LeenGadisseur/Tensorflow-OD-LSTM)
 
