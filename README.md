@@ -6,10 +6,10 @@ Hoofdtitel
 
 Requirements 
 ------------ 
-Tensorflow 2.5
-Python 3.8
-Cuda 11.2
-CuDNN = 8
+* Tensorflow 2.5
+* Python 3.8
+* Cuda 11.2
+* CuDNN 8
 
 
 
