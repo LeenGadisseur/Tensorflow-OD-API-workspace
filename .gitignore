@@ -9,7 +9,7 @@ scripts/pre_procesing/Data/EPFL/*.record
 
 
 models/my_ssd_mobilenet_v2/checkpoints/*
-
+models/my_ssd_mobilenet_v2_tflite/checkpoints/*
 
 
 
