@@ -12,8 +12,6 @@ Requirements
 * CuDNN 8
 
 
-
-
 Annotaties dataset
 ------------------
 
@@ -47,6 +45,9 @@ docker run -it --rm -v $PWD:/tmp -w /tmp tensorflow/tensorflow:2.2.0-gpu bash
 
 Gebruiken van files
 -------------------
+Het gebruik van onderstaande files gebeurt steeds in de conda environment.
+
+### Training en evaluatie van MobileNetV2-SSDLite
 Voor het trainen van de standaard MobileNetV2-SSDLite object detector op de EPFL dataset: 
 
 ```
@@ -71,8 +72,8 @@ TensorBoard gebruiken voor het monitoren van de training en evaluatie:
 tensorboard --logdir=models/my_ssd_mobilenet_v2/checkpoints
 ```
 
-
-Commando voor het produceren van een tflite model van het getrainde model.
+### Genereren TFLite modellen
+Commando voor het produceren van een tflite graph van het getrainde model.
 ```
 python export_tflite_graph_tf2.py \
     --pipeline_config_path=models/my_ssd_mobilenet_v2/pipeline_shards.config \
@@ -81,9 +82,18 @@ python export_tflite_graph_tf2.py \
 
 ```
 
+Commando voor het produceren van een tflite model van het getrainde model.
+```
+python convert_to_tflite.py \
+    --saved_model_path=models/my_ssd_mobilenet_v2_tflite/checkpoints/ckpt8-160x160-b64-st10k 
+
+```
+
 Links
 -----
 * [TensorFlow Models](https://github.com/tensorflow/models)
 * [EPFL TFRecords](https://drive.google.com/drive/folders/148Ss13RS61af6KCZPEoF1SHUKJAEiDz9?usp=sharing)
-* [LSTM models](https://github.com/LeenGadisseur/Tensorflow-OD-LSTM)
+* [LSTM models](https://github.com/LeenGadisseur/Tensorflow-OD-LSTM-API)
+
+
 

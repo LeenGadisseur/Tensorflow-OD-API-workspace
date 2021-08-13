@@ -7,9 +7,10 @@ scripts/pre_procesing/Data/EPFL/shards/*.record
 annotations/test_records/*.record
 scripts/pre_procesing/Data/EPFL/*.record
 
+pre-trained-models/*
 
 models/my_ssd_mobilenet_v2/checkpoints/*
 models/my_ssd_mobilenet_v2_tflite/checkpoints/*
-
-
+models/my_ssd_mobilenet_v1/checkpoints/*
+models/my_ssd_mobilenet_v1/*
 
