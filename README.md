@@ -93,6 +93,7 @@ Links
 -----
 * [TensorFlow Models](https://github.com/tensorflow/models)
 * [EPFL TFRecords](https://drive.google.com/drive/folders/148Ss13RS61af6KCZPEoF1SHUKJAEiDz9?usp=sharing)
+* [Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) Pre-trained weights voor de basismodellen in TensorFlow 2.5.0 zijn hier te vinden.
 * [LSTM models](https://github.com/LeenGadisseur/Tensorflow-OD-LSTM-API)
 
 
