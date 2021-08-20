@@ -13,4 +13,5 @@ models/my_ssd_mobilenet_v2/checkpoints/*
 models/my_ssd_mobilenet_v2_tflite/checkpoints/*
 models/my_ssd_mobilenet_v1/checkpoints/*
 models/my_ssd_mobilenet_v1/checkpoints/*
+*.zip
 
